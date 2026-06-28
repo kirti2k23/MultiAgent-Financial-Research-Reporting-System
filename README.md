@@ -35,6 +35,7 @@ A manager enters a company name and ticker symbol. The system automatically:
 
 ## 📄 Sample Reports
 - [NVIDIA Research Report](sample_reports/NVDA_research_report_NIM.md)
+- [Microsoft Research Report](sample_reports/MSFT_research_report_NIM.md)
 
 ## 🏗️ Architecture
 
