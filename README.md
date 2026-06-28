@@ -16,7 +16,7 @@ A manager enters a company name and ticker symbol. The system automatically:
 4. Synthesizes everything into a structured investment research report
 5. Delivers the report via email and displays it on a web dashboard
 
-**What would take a human analyst 2-3 hours takes this system 30-40 seconds.**
+**What would take a human analyst 4-5 hours takes this system 30-40 seconds.**
 
 ---
 
