@@ -29,7 +29,7 @@ A manager enters a company name and ticker symbol. The system automatically:
 
 > Generated Report — Full investment research report with key metrics
 
-![Report](screenshots/report.png)
+![Report](screenshots/report1.png)
 
 ---
 
