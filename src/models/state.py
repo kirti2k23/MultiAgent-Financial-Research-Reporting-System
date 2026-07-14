@@ -164,6 +164,10 @@ class AgentState(BaseModel):
         default_factory=list,
         description="Non-fatal errors logged during the run"
     )
+    eval_data: list = Field(
+    default_factory=list,
+    description="RAGAS evaluation data — question, answer, contexts per query"
+    )
 
 
 # ─────────────────────────────────────────────────────────────────────────────
