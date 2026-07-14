@@ -57,7 +57,7 @@ beautifulsoup4>=4.12.0
 
 # ── RAG Pipeline ──────────────────────────────────────────────────────────────
 # chromadb — local vector database to store SEC filing embeddings
-chromadb>=0.5.0
+chromadb==0.4.24
 # tiktoken — token counting for chunking documents accurately
 tiktoken>=0.7.0
 
@@ -67,6 +67,10 @@ tiktoken>=0.7.0
 fastapi>=0.112.0
 # uvicorn — ASGI server to run FastAPI
 uvicorn>=0.30.0
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+# streamlit — web UI for the research agent dashboard
+streamlit>=1.35.0
 
 
 # ── Email Delivery ────────────────────────────────────────────────────────────
@@ -82,3 +86,13 @@ langsmith>=0.1.90
 # ── Environment ──────────────────────────────────────────────────────────────
 # python-dotenv — loads .env file into environment variables
 python-dotenv>=1.0.0
+
+# ── Evaluation ───────────────────────────────────────────────────────────────
+# ragas — RAG pipeline evaluation framework
+ragas==0.4.3
+# datasets — required by ragas for evaluation datasets
+datasets>=2.20.0
+
+# ── Compatibility fixes ───────────────────────────────────────────────────────
+# protobuf pinned for ChromaDB compatibility
+protobuf==3.20.3
