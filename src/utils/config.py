@@ -48,7 +48,7 @@ class Config:
 
     # ── LLM ──────────────────────────────────────────────────────────────────
     # Used by all agents to call GPT-4o
-    openai_api_key: str
+    # openai_api_key: str
 
     # ── News Search ───────────────────────────────────────────────────────────
     # Used by news_search.py tool to fetch financial news
@@ -56,9 +56,9 @@ class Config:
 
     # ── Email Delivery ────────────────────────────────────────────────────────
     # Used by email_sender.py to send the final report
-    sendgrid_api_key: str
-    sendgrid_from_email: str
-    report_recipient_email: str
+    # sendgrid_api_key: str
+    # sendgrid_from_email: str
+    # report_recipient_email: str
 
     # ── Observability ─────────────────────────────────────────────────────────
     # Used by LangSmith to trace every agent run
@@ -88,11 +88,11 @@ def _load_config() -> Config:
     """
 
     # ── Step 1: Read all values from environment ──────────────────────────────
-    openai_api_key         = os.getenv("OPENAI_API_KEY",          "")
+    # openai_api_key         = os.getenv("OPENAI_API_KEY",          "")
     tavily_api_key         = os.getenv("TAVILY_API_KEY",          "")
-    sendgrid_api_key       = os.getenv("SENDGRID_API_KEY",        "")
-    sendgrid_from_email    = os.getenv("SENDGRID_FROM_EMAIL",     "")
-    report_recipient_email = os.getenv("REPORT_RECIPIENT_EMAIL",  "")
+    # sendgrid_api_key       = os.getenv("SENDGRID_API_KEY",        "")
+    # sendgrid_from_email    = os.getenv("SENDGRID_FROM_EMAIL",     "")
+    # report_recipient_email = os.getenv("REPORT_RECIPIENT_EMAIL",  "")
     langchain_api_key      = os.getenv("LANGCHAIN_API_KEY",       "")
     chroma_persist_dir     = os.getenv("CHROMA_PERSIST_DIR",      "./chroma_db")
     log_level              = os.getenv("LOG_LEVEL",               "INFO")
@@ -103,7 +103,7 @@ def _load_config() -> Config:
     # instead of failing one key at a time.
 
     required = {
-        "OPENAI_API_KEY":  openai_api_key,
+        # "OPENAI_API_KEY":  openai_api_key,
         "TAVILY_API_KEY":  tavily_api_key,
     }
 
@@ -123,19 +123,19 @@ def _load_config() -> Config:
     # ── Step 3: Warn about optional but recommended keys ─────────────────────
     # These are not required to run the pipeline but reduce functionality.
 
-    if not sendgrid_api_key:
-        print("  [Config] WARNING: SENDGRID_API_KEY not set — email delivery disabled")
+    # if not sendgrid_api_key:
+    #     print("  [Config] WARNING: SENDGRID_API_KEY not set — email delivery disabled")
 
     if not langchain_api_key:
         print("  [Config] WARNING: LANGCHAIN_API_KEY not set — LangSmith tracing disabled")
 
     # ── Step 4: Return the Config object ─────────────────────────────────────
     return Config(
-        openai_api_key         = openai_api_key,
+        # openai_api_key         = openai_api_key,
         tavily_api_key         = tavily_api_key,
-        sendgrid_api_key       = sendgrid_api_key,
-        sendgrid_from_email    = sendgrid_from_email,
-        report_recipient_email = report_recipient_email,
+        # sendgrid_api_key       = sendgrid_api_key,
+        # sendgrid_from_email    = sendgrid_from_email,
+        # report_recipient_email = report_recipient_email,
         langchain_api_key      = langchain_api_key,
         chroma_persist_dir     = chroma_persist_dir,
         log_level              = log_level,
