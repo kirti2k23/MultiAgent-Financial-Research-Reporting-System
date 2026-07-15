@@ -35,7 +35,7 @@ yfinance>=0.2.40
 # pandas — yfinance returns DataFrames; also used in data processing
 pandas>=2.2.0
 # numpy — numerical operations
-numpy>=1.26.0
+numpy>=1.26.0,<2.0.0
 
 
 # ── News & Web Search ─────────────────────────────────────────────────────────
