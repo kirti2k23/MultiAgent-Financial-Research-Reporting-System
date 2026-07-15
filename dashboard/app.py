@@ -33,7 +33,7 @@ import requests
 import streamlit as st
 
 # ── API configuration ─────────────────────────────────────────────────────────
-API_BASE_URL = "http://localhost:8000/api/v1"
+API_BASE_URL = "https://multiagent-financial-research-reporting.onrender.com/api/v1"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
